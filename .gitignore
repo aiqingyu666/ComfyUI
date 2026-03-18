@@ -24,3 +24,35 @@ web_custom_versions/
 openapi.yaml
 filtered-openapi.yaml
 uv.lock
+# === ComfyUI 专属：忽略大文件和临时数据 ===
+# 忽略所有模型文件（非常大！通常几GB~几十GB）
+models/
+
+# 忽略生成的图像输出
+output/
+
+# 忽略输入素材（如果有的话）
+input/
+
+# 忽略临时文件夹
+temp/
+
+# 忽略数据库迁移缓存（如果有）
+alembic_db/
+
+# 忽略 Python 字节码缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 忽略虚拟环境（如果你本地创建了 venv）
+venv/
+env/
+.venv/
+
+# 忽略大型可执行文件（如“ComfyUI管理大师”这类第三方工具）
+ComfyUI管理大师*.exe
+*.dll
+*.so
+
+# 忽略用户自定义工作流保存目录# user/workflows/   
